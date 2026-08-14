@@ -1,9 +1,126 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <title>My Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="TonyMic — Python automation developer building smart systems and useful digital tools.">
+  <title>TonyMic — Python Automation Developer</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="/style.css">
 </head>
+
 <body>
-    <h1>Hello, World! Welcome to my website.</h1>
+  <div class="scanlines"></div>
+
+  <header class="relative z-10 border-b border-[var(--color-line)]">
+    <nav class="page-shell flex h-20 items-center justify-between" aria-label="Main navigation">
+      <a href="#home" class="font-mono text-sm font-bold tracking-[0.18em] text-[var(--color-primary)]">TM<span class="text-[var(--color-text)]">_//</span></a>
+      <div class="hidden items-center gap-8 text-sm md:flex">
+        <a class="nav-link" href="#home">Home</a>
+        <a class="nav-link" href="#work">Work</a>
+        <a class="nav-link" href="#about">About</a>
+        <a class="nav-link" href="#contact">Contact</a>
+      </div>
+      <a href="#contact" class="rounded-[var(--radius)] border border-[var(--color-primary)] px-4 py-2 text-xs font-bold uppercase tracking-widest text-[var(--color-primary)] transition hover:bg-[var(--color-primary)] hover:text-[var(--color-primary-contrast)]">Let's talk</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="grid-bg relative overflow-hidden border-b border-[var(--color-line)]">
+      <div class="page-shell relative z-10 grid min-h-[calc(100vh-80px)] items-center gap-14 py-20 lg:grid-cols-[1.2fr_0.8fr]">
+        <div>
+          <p class="eyebrow mb-7">Python automation developer · Building useful things</p>
+          <h1 class="display-title max-w-4xl">Hi, I'm<br><span class="neon-text">TonyMic.</span><br>I automate<br>the ordinary.</h1>
+          <p class="mt-9 max-w-xl text-lg leading-8 text-[var(--color-muted)]">I use <strong class="text-[var(--color-text)]">Python</strong> to turn repetitive tasks into smart systems, reliable workflows, and tools that make everyday work simpler.</p>
+          <div class="mt-10 flex flex-wrap gap-4">
+            <a href="#work" class="rounded-[var(--radius)] bg-[var(--color-primary)] px-6 py-3 text-sm font-bold text-[var(--color-primary-contrast)] transition hover:brightness-110">See my work <span class="ml-3">↗</span></a>
+            <a href="#about" class="rounded-[var(--radius)] border border-[var(--color-line)] px-6 py-3 text-sm font-bold text-[var(--color-text)] transition hover:border-[var(--color-primary)] hover:text-[var(--color-primary)]">About TonyMic</a>
+          </div>
+        </div>
+
+        <div class="relative mx-auto w-full max-w-sm">
+          <div class="absolute -right-5 -top-5 h-24 w-24 rounded-full border border-[var(--color-primary)] opacity-60"></div>
+          <div class="neon-box relative aspect-square overflow-hidden rounded-[var(--radius)] border border-[var(--color-line)] bg-[var(--color-surface)] p-6">
+            <div class="flex items-center justify-between border-b border-[var(--color-line)] pb-4 font-mono text-[10px] uppercase tracking-widest text-[var(--color-muted)]"><span>tonymic.py</span><span class="text-[var(--color-primary)]">running</span></div>
+            <div class="flex h-[calc(100%-40px)] flex-col justify-end">
+              <div class="mb-8 text-8xl font-black leading-none tracking-[-0.15em] text-[var(--color-primary)]">TM</div>
+              <div class="grid grid-cols-2 gap-3 font-mono text-[10px] uppercase tracking-widest text-[var(--color-muted)]"><span>Language</span><span class="text-right text-[var(--color-text)]">Python</span><span>Specialty</span><span class="text-right text-[var(--color-text)]">Automation</span></div>
+            </div>
+          </div>
+          <p class="mt-5 font-mono text-xs text-[var(--color-muted)]">// less boring work. more possibilities.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="work" class="page-shell py-24">
+      <div class="mb-12">
+        <p class="eyebrow mb-4">Selected capabilities</p>
+        <h2 class="section-title">Python-powered<br><span class="neon-text">automation.</span></h2>
+      </div>
+      <div class="grid gap-5 md:grid-cols-3">
+        <article class="project-card rounded-[var(--radius)] border border-[var(--color-line)] bg-[var(--color-surface)] p-5 md:col-span-2">
+          <div class="mb-14 flex aspect-[2/1] items-end rounded-[calc(var(--radius)-0.35rem)] bg-[var(--color-accent)] p-6 text-[var(--color-primary-contrast)]"><span class="text-5xl font-bold tracking-tighter">AUTO/01</span></div>
+          <p class="eyebrow">Python automation</p>
+          <h3 class="mt-2 text-2xl font-bold">Turning repetitive work into smart systems.</h3>
+          <p class="mt-3 leading-7 text-[var(--color-muted)]">Scripts and workflows that save time, reduce errors, and keep everyday operations moving.</p>
+        </article>
+        <article class="project-card rounded-[var(--radius)] border border-[var(--color-line)] bg-[var(--color-surface)] p-5">
+          <div class="mb-14 flex aspect-[2/1] items-end rounded-[calc(var(--radius)-0.35rem)] bg-[var(--color-primary)] p-6 text-[var(--color-primary-contrast)]"><span class="text-5xl font-bold tracking-tighter">TOOLS/02</span></div>
+          <p class="eyebrow">Useful software</p>
+          <h3 class="mt-2 text-2xl font-bold">Making complex feel simple.</h3>
+          <p class="mt-3 leading-7 text-[var(--color-muted)]">Practical digital tools built around real people and real problems.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="about" class="border-y border-[var(--color-line)] bg-[var(--color-surface)] py-24">
+      <div class="page-shell grid gap-16 lg:grid-cols-[0.7fr_1.3fr]">
+        <div>
+          <p class="eyebrow mb-5">About / human.exe</p>
+          <div class="neon-box flex aspect-square max-w-sm items-center justify-center rounded-[var(--radius)] border border-[var(--color-line)] bg-[var(--color-bg)]"><span class="text-[clamp(5rem,15vw,10rem)] font-black tracking-[-0.15em] text-[var(--color-primary)]">TM</span></div>
+        </div>
+        <div>
+          <h2 class="section-title">Curious by nature.<br><span class="neon-text">Intentional by design.</span></h2>
+          <p class="mt-8 text-xl leading-9 text-[var(--color-muted)]">I'm TonyMic, a Python developer who is good at automation. I build smart systems that remove boring work and give people more time for what matters.</p>
+          <p class="mt-6 text-lg leading-8 text-[var(--color-muted)]">My favorite projects combine clean Python code, creative problem-solving, and simple experiences that genuinely make life easier.</p>
+          <div class="mt-12 grid gap-8 border-t border-[var(--color-line)] pt-8 sm:grid-cols-2">
+            <div>
+              <p class="eyebrow mb-3">Focus</p>
+              <p class="leading-7">Python development<br>Task automation<br>Smart workflows</p>
+            </div>
+            <div>
+              <p class="eyebrow mb-3">Currently</p>
+              <p class="leading-7">Open to collaborations<br>Remote / worldwide<br>Good energy only</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="page-shell py-24">
+      <div class="grid gap-16 lg:grid-cols-[0.8fr_1.2fr]">
+        <div>
+          <p class="eyebrow mb-5">Open channel</p>
+          <h2 class="section-title">Have a good<br><span class="neon-text">idea?</span></h2>
+          <p class="mt-8 max-w-md text-lg leading-8 text-[var(--color-muted)]">Tell me what you're building and which repetitive problem you want to solve. Let's make it automatic.</p>
+          <p class="mt-10 font-mono text-sm text-[var(--color-primary)]">hello@yourname.com</p>
+        </div>
+        <form class="rounded-[var(--radius)] border border-[var(--color-line)] bg-[var(--color-surface)] p-6 sm:p-9" action="#contact" method="post">
+          <div class="grid gap-6 sm:grid-cols-2">
+            <label class="block"><span class="eyebrow mb-3 block">Your name</span><input class="w-full border-b border-[var(--color-line)] bg-transparent px-0 py-3 text-[var(--color-text)] outline-none focus:border-[var(--color-primary)]" type="text" placeholder="Jane Doe"></label>
+            <label class="block"><span class="eyebrow mb-3 block">Email</span><input class="w-full border-b border-[var(--color-line)] bg-transparent px-0 py-3 text-[var(--color-text)] outline-none focus:border-[var(--color-primary)]" type="email" placeholder="jane@email.com"></label>
+          </div>
+          <label class="mt-8 block"><span class="eyebrow mb-3 block">What should we automate?</span><textarea class="min-h-32 w-full resize-y border-b border-[var(--color-line)] bg-transparent px-0 py-3 text-[var(--color-text)] outline-none focus:border-[var(--color-primary)]" placeholder="Tell me about your project..."></textarea></label>
+          <button class="mt-8 rounded-[var(--radius)] bg-[var(--color-primary)] px-6 py-3 text-sm font-bold text-[var(--color-primary-contrast)] transition hover:brightness-110" type="submit">Send transmission ↗</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-[var(--color-line)]">
+    <div class="page-shell flex flex-col justify-between gap-4 py-7 text-xs text-[var(--color-muted)] sm:flex-row"><span>© 2025 TonyMic</span><span>Built with Python, curiosity + caffeine</span></div>
+  </footer>
 </body>
+
 </html>
